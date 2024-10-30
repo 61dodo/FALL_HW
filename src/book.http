@@ -1,0 +1,27 @@
+### 새로운 책 추가
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "id": "1",
+  "title": "대도시의 사랑법",
+  "writer": "박상영",
+  "isAvailable": true
+}
+
+
+### 모든 책 조회
+GET http://localhost:3000/books
+
+
+### 책 정보 수정
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "title": "대도시의 사랑법 (강추)"
+}
+
+
+### 책 삭제
+DELETE http://localhost:3000/books/1
